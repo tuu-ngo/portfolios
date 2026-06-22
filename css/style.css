@@ -655,8 +655,14 @@ ul {
 /* ---- Projects ---- */
 .projects__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   gap: 2rem;
+}
+
+.projects__more {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
 }
 
 .project-card {
@@ -739,6 +745,22 @@ ul {
 
 .project-card__list li::marker {
   color: var(--accent);
+}
+
+.project-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+  transition: color var(--transition), gap var(--transition);
+}
+
+.project-card__link:hover {
+  color: var(--accent-dark);
+  gap: 0.6rem;
 }
 
 /* ---- Education ---- */
