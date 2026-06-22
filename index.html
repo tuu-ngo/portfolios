@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ngo Huu Tai — DevOps & Cloud Engineer portfolio. AWS, CI/CD, serverless architecture, and cloud-native applications.">
+  <meta name="author" content="Ngo Huu Tai">
+  <title>Ngo Huu Tai | DevOps Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☁</text></svg>">
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">NHT<span class="nav__logo-dot">.</span></a>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#education" class="nav__link">Education</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero__bg"></div>
+      <div class="container hero__container">
+        <div class="hero__content">
+          <p class="hero__greeting">Hello, I'm</p>
+          <h1 class="hero__name">Ngo Huu Tai</h1>
+          <h2 class="hero__title">DevOps & Cloud Engineer</h2>
+          <p class="hero__desc">
+            Aspiring DevOps and Cloud Engineer with practical experience in AWS cloud services,
+            CI/CD pipelines, monitoring, and system troubleshooting. Focused on automation,
+            reliability, scalability, and operational efficiency.
+          </p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">View Projects</a>
+            <a href="#contact" class="btn btn--outline">Get in Touch</a>
+          </div>
+          <div class="hero__social">
+            <a href="https://github.com/tuu-ngo" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-1.35-3.42-3.36-4.365-3.36-4.365-1.08-1.275-.015-1.245-.015-1.245 1.125-.075 1.71 1.155 1.71 1.155 1.005 1.725 2.64 1.23 3.285.945.105-.735.42-1.23.765-1.515-2.655-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.37 1.23-3.21-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.21 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="mailto:huutai.ngo2409@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+            </a>
+            <a href="tel:+84905609571" aria-label="Phone">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero__image-wrapper">
+          <div class="hero__image-ring"></div>
+          <img src="assets/profile.jpg" alt="Ngo Huu Tai" class="hero__image" width="320" height="320">
+          <div class="hero__badge">
+            <span class="hero__badge-icon">☁</span>
+            <div>
+              <strong>AWS SAA</strong>
+              <span>Certified</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Scroll down">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </a>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">About Me</span>
+          <h2 class="section__title">Building Reliable Cloud Infrastructure</h2>
+        </div>
+        <div class="about__grid">
+          <div class="about__text">
+            <p>
+              I build and deploy cloud-native applications using AWS, Docker, and GitHub Actions,
+              with a focus on automation, reliability, scalability, and operational efficiency.
+            </p>
+            <p>
+              Currently working as a DevOps Engineer at TechX in Da Nang, Vietnam, where I design
+              serverless architectures, implement CI/CD pipelines, and collaborate in Agile teams
+              to deliver production-ready cloud solutions.
+            </p>
+          </div>
+          <div class="about__stats">
+            <div class="stat-card">
+              <span class="stat-card__value">3.9</span>
+              <span class="stat-card__label">GPA (CS)</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__value">8.0</span>
+              <span class="stat-card__label">IELTS Score</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__value">#1</span>
+              <span class="stat-card__label">Hackathon</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__value">AWS</span>
+              <span class="stat-card__label">SAA Certified</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Skills</span>
+          <h2 class="section__title">Technical Expertise</h2>
+        </div>
+        <div class="skills__grid">
+          <div class="skill-card">
+            <div class="skill-card__icon">☁</div>
+            <h3 class="skill-card__title">Cloud & DevOps</h3>
+            <div class="skill-card__tags">
+              <span>AWS Lambda</span><span>API Gateway</span><span>S3</span><span>CloudFront</span>
+              <span>RDS</span><span>RDS Proxy</span><span>SQS</span><span>IAM</span>
+              <span>CloudWatch</span><span>GitHub Actions</span><span>Docker</span><span>Linux</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card__icon">🏗</div>
+            <h3 class="skill-card__title">Infrastructure</h3>
+            <div class="skill-card__tags">
+              <span>Terraform</span><span>Kubernetes</span><span>Minikube</span><span>Kind</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card__icon">⚙</div>
+            <h3 class="skill-card__title">Backend</h3>
+            <div class="skill-card__tags">
+              <span>Python</span><span>FastAPI</span><span>RESTful APIs</span><span>API Design</span>
+              <span>File Upload</span><span>Testing</span><span>Debugging</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card__icon">🗄</div>
+            <h3 class="skill-card__title">Database</h3>
+            <div class="skill-card__tags">
+              <span>PostgreSQL</span><span>MySQL</span><span>SQLite</span>
+              <span>SQLAlchemy</span><span>Alembic</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card__icon">🛠</div>
+            <h3 class="skill-card__title">Tools</h3>
+            <div class="skill-card__tags">
+              <span>Git</span><span>GitHub</span><span>Postman</span><span>Draw.io</span><span>VS Code</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card__icon">🌐</div>
+            <h3 class="skill-card__title">Languages</h3>
+            <div class="skill-card__tags">
+              <span>English (IELTS 8.0)</span><span>French (DELF B1)</span><span>German (A2)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Experience</span>
+          <h2 class="section__title">Work History</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <div class="timeline__header">
+                <div>
+                  <h3 class="timeline__role">DevOps Engineer</h3>
+                  <p class="timeline__company">TechX</p>
+                </div>
+                <span class="timeline__date">Aug 2025 – Present</span>
+              </div>
+              <p class="timeline__location">Da Nang, Vietnam</p>
+              <ul class="timeline__list">
+                <li>Built and deployed cloud-native applications on AWS using Lambda, API Gateway, S3, CloudFront, SQS, RDS PostgreSQL, IAM, and CloudWatch.</li>
+                <li>Designed and documented serverless architectures with system workflows, infrastructure diagrams, trade-off analysis, and cost estimation.</li>
+                <li>Implemented CI/CD pipelines with GitHub Actions and AWS OIDC authentication for automated build, test, and deployment.</li>
+                <li>Developed a serverless financial application for CSV/PDF processing and budget insights; performed monitoring, logging, and troubleshooting via CloudWatch.</li>
+                <li>Collaborated in Agile teams on technical documentation, architecture reviews, demos, and stakeholder presentations.</li>
+                <li>Evaluated AWS service selection, scalability, security, and operational costs to optimize performance and maintainability.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Projects</span>
+          <h2 class="section__title">Featured Work</h2>
+        </div>
+        <div class="projects__grid">
+          <article class="project-card project-card--featured">
+            <div class="project-card__badge">🏆 Top 1 Hackathon</div>
+            <h3 class="project-card__title">BudgetBot</h3>
+            <p class="project-card__subtitle">XBrain/TechX Hackathon — Backend & Cloud Architecture Lead / PM</p>
+            <p class="project-card__desc">
+              Serverless financial application processing CSV/PDF data with AI-based classification
+              and budget alerts. Team of 5.
+            </p>
+            <div class="project-card__tags">
+              <span>Python</span><span>AWS</span><span>React</span><span>PostgreSQL</span>
+              <span>Lambda</span><span>SQS</span><span>Bedrock</span>
+            </div>
+            <ul class="project-card__list">
+              <li>Designed serverless AWS architecture: CloudFront, S3, API Gateway, Lambda, SQS, RDS PostgreSQL, RDS Proxy.</li>
+              <li>Monitored Lambda execution and debugged API failures using CloudWatch logs/metrics.</li>
+              <li>Built GitHub Actions CI/CD pipeline for automated Lambda deployment.</li>
+              <li>Integrated Amazon Bedrock/Nova Micro with trade-off analysis on cost, latency, and accuracy.</li>
+            </ul>
+          </article>
+          <article class="project-card">
+            <h3 class="project-card__title">K8s on AWS with Terraform</h3>
+            <p class="project-card__subtitle">Infrastructure as Code — Personal Project</p>
+            <p class="project-card__desc">
+              Provisioned AWS infrastructure and automated Kubernetes cluster deployment
+              using modular Terraform configurations.
+            </p>
+            <div class="project-card__tags">
+              <span>Terraform</span><span>AWS</span><span>Kubernetes</span>
+            </div>
+            <ul class="project-card__list">
+              <li>Provisioned AWS infrastructure using Terraform modules.</li>
+              <li>Automated Kubernetes cluster deployment through IaC practices.</li>
+              <li>Explored cloud provisioning, networking, and container orchestration fundamentals.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Education</span>
+          <h2 class="section__title">Academic Background</h2>
+        </div>
+        <div class="edu__grid">
+          <article class="edu-card">
+            <div class="edu-card__icon">🎓</div>
+            <h3 class="edu-card__school">Troy University</h3>
+            <p class="edu-card__degree">B.S. in Computer Science</p>
+            <p class="edu-card__location">Alabama, US (Remote from Da Nang, Vietnam)</p>
+            <div class="edu-card__meta">
+              <span>GPA: 3.9/4.0</span>
+              <span>IELTS: 8.0</span>
+            </div>
+            <p class="edu-card__awards">Chancellor's List · 4-year Tuition Scholarship · Debating & English Contest Awards</p>
+          </article>
+          <article class="edu-card">
+            <div class="edu-card__icon">🎓</div>
+            <h3 class="edu-card__school">University of Foreign Language</h3>
+            <p class="edu-card__degree">B.S. in French</p>
+            <p class="edu-card__location">Da Nang, Vietnam</p>
+            <div class="edu-card__meta">
+              <span>GPA: 3.7/4.0</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="section__header section__header--spaced">
+          <span class="section__tag">Certifications</span>
+          <h2 class="section__title">Credentials & Awards</h2>
+        </div>
+        <div class="certs__grid">
+          <div class="cert-badge cert-badge--primary">
+            <span class="cert-badge__icon">☁</span>
+            <div>
+              <strong>AWS Certified Solutions Architect</strong>
+              <span>Associate</span>
+            </div>
+          </div>
+          <div class="cert-badge">
+            <span class="cert-badge__icon">🏆</span>
+            <div>
+              <strong>First Place</strong>
+              <span>Hackathon at TechX/XBrain</span>
+            </div>
+          </div>
+          <div class="cert-badge">
+            <span class="cert-badge__icon">📜</span>
+            <div>
+              <strong>Google AI Essentials</strong>
+              <span>Google</span>
+            </div>
+          </div>
+          <div class="cert-badge">
+            <span class="cert-badge__icon">📜</span>
+            <div>
+              <strong>Foundations of Data</strong>
+              <span>Google</span>
+            </div>
+          </div>
+          <div class="cert-badge">
+            <span class="cert-badge__icon">📜</span>
+            <div>
+              <strong>IT Automation with Python</strong>
+              <span>Google</span>
+            </div>
+          </div>
+          <div class="cert-badge">
+            <span class="cert-badge__icon">🎖</span>
+            <div>
+              <strong>Dean's Scholarship</strong>
+              <span>Academic Award</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--contact" id="contact">
+      <div class="container">
+        <div class="contact__wrapper">
+          <div class="contact__info">
+            <span class="section__tag">Contact</span>
+            <h2 class="section__title">Let's Connect</h2>
+            <p class="contact__desc">
+              Open to DevOps Engineer opportunities. Feel free to reach out for collaboration,
+              questions, or just a friendly chat about cloud infrastructure.
+            </p>
+            <ul class="contact__list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+                <a href="mailto:huutai.ngo2409@gmail.com">huutai.ngo2409@gmail.com</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                <a href="tel:+84905609571">0905 609 571</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-1.35-3.42-3.36-4.365-3.36-4.365-1.08-1.275-.015-1.245-.015-1.245 1.125-.075 1.71 1.155 1.71 1.155 1.005 1.725 2.64 1.23 3.285.945.105-.735.42-1.23.765-1.515-2.655-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.37 1.23-3.21-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.21 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <a href="https://github.com/tuu-ngo" target="_blank" rel="noopener noreferrer">github.com/tuu-ngo</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Da Nang, Vietnam</span>
+              </li>
+            </ul>
+          </div>
+          <form class="contact__form" id="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Your message..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <p>&copy; 2026 Ngo Huu Tai. Built with passion for cloud infrastructure.</p>
+      <a href="#home" class="footer__top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
