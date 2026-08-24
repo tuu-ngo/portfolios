@@ -249,9 +249,21 @@ a {
   text-transform: uppercase;
   font-size: clamp(1.4rem, 3.5vw, 2.5rem);
   letter-spacing: -0.01em;
+  line-height: 1;
   will-change: transform;
 }
-.marquee__track .star { color: var(--pink); }
+.marquee__group {
+  display: inline-flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+.marquee__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+.marquee__word { display: inline-flex; align-items: center; line-height: 1; }
+.marquee__track .star { color: var(--pink); display: inline-flex; align-items: center; line-height: 1; }
 .marquee--fill .star { color: var(--yellow); }
 
 /* ============================================================================

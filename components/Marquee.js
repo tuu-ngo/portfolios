@@ -7,8 +7,8 @@ export default function Marquee({ items, variant = "", speed = 1, reverse = fals
   const group = (
     <span className="marquee__group" aria-hidden={false}>
       {items.map((word, i) => (
-        <span key={i} style={{ display: "inline-flex", gap: "2.5rem", alignItems: "center" }}>
-          {word}
+        <span className="marquee__item" key={i}>
+          <span className="marquee__word">{word}</span>
           <span className="star">★</span>
         </span>
       ))}
